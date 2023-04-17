@@ -1,7 +1,7 @@
 <template>
     <div class="header">
         <el-header>
-            <div class="title">通用管理系统</div>
+            <div class="title">APPUI自动化测试平台</div>
             <div>{{name}}</div>
         </el-header>
     </div>

@@ -3,7 +3,7 @@
     <el-card class="box-card">
       <template #header>
         <div class="clearfix">
-          <span>通用后台管理系统</span>
+          <span>APPUI自动化测试平台</span>
         </div>    
       </template>
       <el-form label-width="80px" :model="form" ref="form" :rules="rules">

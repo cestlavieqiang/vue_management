@@ -22,20 +22,20 @@ const routes =[
     // },
     {
         path: '/home',
-        name: '学生管理',
+        name: '分组管理',
         iconClass: 'fa fa-users',
         redirect: '/home/student',
         component: () => import('@/components/Home'),
         children: [
             {
                 path: '/home/student',
-                name: '学生列表',
+                name: '部门列表',
                 iconClass: 'fa fa-list',
                 component: () => import('@/components/students/StudentList')
             },
             {
                 path: '/home/info',
-                name: '信息列表',
+                name: '项目列表',
                 iconClass: 'fa fa-list-alt',
                 component: () => import('@/components/students/InfoList')
             },
@@ -61,7 +61,7 @@ const routes =[
     },
     {
         path: '/home',
-        name: '数据分析',
+        name: '用例管理',
         iconClass: 'fa fa-bar-chart',
         component: () => import('@/components/Home'),
         children: [
@@ -93,7 +93,7 @@ const routes =[
     },
     {
         path: '/users',
-        name: '用户中心',
+        name: '测试报告',
         iconClass: 'fa fa-user',
         component: () => import('@/components/Home'),
         children: [
