@@ -1,23 +1,23 @@
-# project-v3
+# vue_management
 
 ## Project setup
 ```
-yarn install
+npm install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+npm run serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build
+npm run build
 ```
 
-### Lints and fixes files
+### 项目说明
 ```
-yarn lint
+通用型后台管理系统
 ```
 
 ### Customize configuration
