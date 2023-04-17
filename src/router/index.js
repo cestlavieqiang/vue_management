@@ -22,7 +22,7 @@ const routes =[
     // },
     {
         path: '/home',
-        name: '分组管理',
+        name: '综合管理',
         iconClass: 'fa fa-users',
         redirect: '/home/student',
         component: () => import('@/components/Home'),
@@ -41,21 +41,9 @@ const routes =[
             },
             {
                 path: '/home/infos',
-                name: '信息管理',
+                name: '消息通知',
                 iconClass: 'fa fa-list-alt',
                 component: () => import('@/components/students/InfoLists')
-            },
-            {
-                path: '/home/work',
-                name: '作业列表',
-                iconClass: 'fa fa-list-ul',
-                component: () => import('@/components/students/WorkList')
-            },
-            {
-                path: '/home/works',
-                name: '作业管理',
-                iconClass: 'fa fa-th-list',
-                component: () => import('@/components/students/WorkMent')
             }
         ]
     },
