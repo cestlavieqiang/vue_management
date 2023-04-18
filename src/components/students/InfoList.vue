@@ -77,12 +77,12 @@
           <el-input v-model="form.phone" autocomplete="off"></el-input>
         </el-form-item>
       </el-form>
-      <div slot="footer" class="dialog-footer">
+      <!-- <div slot="footer" class="dialog-footer"> -->
         <el-button @click="closeInfo('form')">取 消</el-button>
         <el-button type="primary" @click="sure('form')"
           >确 定</el-button
         >
-      </div>
+      <!-- </div> -->
     </el-dialog>
   </div>
 </template>

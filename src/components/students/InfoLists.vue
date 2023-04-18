@@ -27,7 +27,7 @@
       <el-table-column prop="phone" label="联系方式" align="center">
       </el-table-column>
       <el-table-column label="操作" align="center">
-        <template slot-scope="scope">
+        <template v-slot="scope">
           <el-button
             type="danger"
             size="mini"
@@ -43,7 +43,7 @@
         </template>
       </el-table-column>
     </el-table>
-    <el-dialog :title="state ? '添加学生信息' : '修改学生信息'" :visible.sync="dialogFormVisible" width="500px">
+    <el-dialog :title="state ? '添加学生信息' : '修改学生信息'" v-model:visible="dialogFormVisible" width="500px">
       <el-form :model="form" :rules="rules" ref="form">
         <el-form-item label="姓名" :label-width="formLabelWidth" prop="name">
           <el-input v-model="form.name" autocomplete="off"></el-input>
@@ -77,12 +77,12 @@
           <el-input v-model="form.phone" autocomplete="off"></el-input>
         </el-form-item>
       </el-form>
-      <div slot="footer" class="dialog-footer">
+      <!-- <div slot="footer" class="dialog-footer"> -->
         <el-button @click="closeInfo('form')">取 消</el-button>
         <el-button type="primary" @click="sure('form')"
           >确 定</el-button
         >
-      </div>
+      <!-- </div> -->
     </el-dialog>
   </div>
 </template>
